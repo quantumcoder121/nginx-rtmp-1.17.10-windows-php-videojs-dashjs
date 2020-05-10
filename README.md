@@ -1,5 +1,11 @@
-# nginx-rtmp-1.17.10-windows
+forked from SwampApe/nginx-rtmp-1.17.10-windows
 
+    Nginx: 1.17.10
+    RTMP Module: 1.2.1
+
+Added some extra's that I find usefull and created a new config that includes HLS and DASH
+
+# nginx-rtmp-1.17.10-windows
 
 Autoconf settings
 
