@@ -1,4 +1,1 @@
-127.0.0.1 - - [15/Apr/2020:10:44:38 -0700] "GET /index.html HTTP/1.1" 200 524 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0"
-127.0.0.1 - - [15/Apr/2020:10:44:38 -0700] "GET /jwplayer/jwplayer.js HTTP/1.1" 200 36594 "http://127.0.0.1:8080/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0"
-127.0.0.1 - - [15/Apr/2020:10:44:38 -0700] "GET /favicon.ico HTTP/1.1" 404 154 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0"
-127.0.0.1 - - [15/Apr/2020:10:44:38 -0700] "GET /jwplayer/jwplayer.flash.swf HTTP/1.1" 200 138302 "http://127.0.0.1:8080/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) Gecko/20100101 Firefox/75.0"
+
