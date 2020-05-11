@@ -3,7 +3,11 @@ forked from SwampApe/nginx-rtmp-1.17.10-windows
     Nginx: 1.17.10
     RTMP Module: 1.2.1
 
-Added some extra's that I find usefull and created a new config that includes HLS and DASH
+I added some extra's like php7.4 and web players for HLS and Dash streams and the webpages to show them.
+
+Things you must do yourself: Download and unzip PHP package for Windows, and download/unzip the
+Video.js and Dash.js packages and place them in the correct folders under the html folder.
+
 
 # nginx-rtmp-1.17.10-windows
 
