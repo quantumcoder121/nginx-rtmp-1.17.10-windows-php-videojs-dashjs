@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='/videojs/video.js'></script>
+<script src="/videojs/videojs-http-streaming.js"></script>
+<meta charset=utf-8 />
+<title>HLS</title>
+<link href="/videojs/video-js.min.css" rel="stylesheet">
+<!-- <link href="/videojs/videojs-sublime-skin.min.css" rel="stylesheet"> -->
+<!-- <link href="/videojs/videojs-sublime-skin.css" rel="stylesheet"> -->
+<!-- <link href="/videojs/video-js.css" rel="stylesheet"> -->
+<!-- <link href="/videojs/videojs-skin-twitchy.css" rel="stylesheet" type="text/css">  -->
+</head>
+<body>
+<center>
+
+<video-js id="live_stream" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" autoplay="true" width="auto" height="auto">
+<source src="/hls/stream/index.m3u8" type="application/x-mpegURL">
+
+    <p class='vjs-no-js'>
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+    </p>
+</video-js>
+  
+  <script>
+    var player = videojs('live_stream');
+	player.play();
+  </script>
+
+</center>
+</body>
+</html>
