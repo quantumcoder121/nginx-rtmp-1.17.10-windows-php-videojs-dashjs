@@ -1,8 +1,8 @@
 This package was forked from SwampApe/nginx-rtmp-1.17.10-windows.
 
-It has RTMP module working out of the box and very easy to setup on your localhost (or any
-other network location) to create HLS and DASH video-fragment files from an incoming RTMP
-live-stream, that can be used for playback on a website. Or even from our localhost since 
+It has RTMP module working "out of the box" and very easy to setup on your localhost (or
+another machine on your lan) to create HLS and DASH video-fragment files from an incoming 
+RTMP stream, that can be used for playback on a website. Or even from our localhost since 
 Nginx is a web-server above anything else. The files that you can access through a web-
 browser are all stored in the html folder and can be found at http://localhost:8050
 
