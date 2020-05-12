@@ -29,6 +29,15 @@ kills all the nginx processes by looking at your task manager (ctrl+alt+del, tas
 If it doesn't kill all nginx processes you must end them manually by right clicking them
 and end process. Now you can start nginx.exe again and your changes will be active.
 
+If Windows blocked some files because you've downloaded them, you can easily unblock them
+using Power Shell. Open Power Shell (Run as administrator) and type:
+
+dir C:\Server\Nginx1.17 -Recurse | Unblock-File
+dir C:\Server\Nginx1.17\html -Recurse | Unblock-File
+dir C:\Server\Nginx1.17\extras -Recurse | Unblock-File
+dir C:\Server\Nginx1.17\html\dashjs -Recurse | Unblock-File
+dir C:\Server\Nginx1.17\html\videojs -Recurse | Unblock-File
+
 If you have any questions don't think about bothering me for it. Use google like any other
 well respected geek.
 
