@@ -1,25 +1,29 @@
 This package was forked from SwampApe/nginx-rtmp-1.17.10-windows.
 
-It has RTMP module working "out of the box" and very easy to setup on your localhost (or
-another machine on your lan) to create HLS and DASH video-fragment files from an incoming 
-RTMP stream, that can be used for playback on a website. Or even from our localhost since 
-Nginx is a web-server above anything else. The files that you can access through a web-
-browser are all stored in the html folder and can be found at http://localhost:8050
+What is it? My attempt to make it as easy as possible to set up a live-stream server on MS 
+Windows. It's a super, duper, easy and fast way that "works out of the box" if you follow 
+the guide. So if you don't want to worry about editing config files, and have it work as is, 
+then make sure to unpack the contents to EXACTLY this folder: C:\Server\Nginx1.17 so that 
+Nginx will be located at C:\Server\Nginx1.17\nginx.exe.
 
-I added some extra's like php7.4 and players for HLS and Dash streams and the webpages to 
+It has the RTMP module included, and that's why we want it for our streaming purposes. It can 
+be used to create the files for a HLS live-stream and/or Dash live-stream. These are used to
+display video content on mobile devices. Without special apps, mobile devices are unable to 
+play RTMP streams. OBS, Wirecast and others all send your stream out in RTMP. So if you 
+want your stream to be available for mobile users, you'll need to create HLS or Dash streams 
+that a simple web-player like VideoJS can show in your website. This package automatically
+creates HLS and Dash files, without using any extra processing power. 
+
+I added some extra's like php7.4 and webplayers for HLS and Dash streams and the webpages to 
 watch the HLS and DASH video-streams. Use these as an example for integration in to your own
 website.
-
-Things you must still do yourself: Download and unzip PHP package for Windows, and download
-unzip the Video.js and Dash.js packages and place them in the correct folders under the html
-folder. Instructions and download links are in the README files in their respective folders.
 
 Before you run nginx.exe make sure that you have had a look at the conf/nginx.conf file. It 
 might be required to edit some things in there so it will work in your specific environment.
 
-Super duper easy fast "works out of the box" solution would be to download this package and
-store it in exactly this location: C:\Server\Nginx1.17\. If you do so, you should be good to
-go and don't have to edit any config or .bat files.
+Things you must still do yourself: Download and unzip PHP package for Windows, and download
+unzip the Video.js and Dash.js packages and place them in the correct folders under the html
+folder. Instructions and download links are in the README files in their respective folders.
 
 Every time you make a change in the nginx.conf file, you can use the test-config.bat file
 to see if nginx finds any errors in your config. If it finds no errors, you can now safely
@@ -28,6 +32,7 @@ config file so they become activate. First use the stop-nginx.bat file and check
 kills all the nginx processes by looking at your task manager (ctrl+alt+del, task-manager). 
 If it doesn't kill all nginx processes you must end them manually by right clicking them
 and end process. Now you can start nginx.exe again and your changes will be active.
+
 
 If Windows blocked some files because you've downloaded them, you can easily unblock them
 using Power Shell. Open Power Shell (Run as administrator) and type:
