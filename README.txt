@@ -33,6 +33,7 @@ If Windows blocked some files because you've downloaded them, you can easily unb
 using Power Shell. Open Power Shell (Run as administrator) and type:
 
 dir C:\Server\Nginx1.17 -Recurse | Unblock-File
+dir C:\Server\Nginx1.17\PHP -Recurse | Unblock-File
 dir C:\Server\Nginx1.17\html -Recurse | Unblock-File
 dir C:\Server\Nginx1.17\extras -Recurse | Unblock-File
 dir C:\Server\Nginx1.17\html\dashjs -Recurse | Unblock-File
