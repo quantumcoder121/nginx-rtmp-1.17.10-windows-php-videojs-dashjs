@@ -24,6 +24,7 @@ might be required to edit some things in there so it will work in your specific 
 Things you must still do yourself: Download and unzip PHP package for Windows, and download
 unzip the Video.js and Dash.js packages and place them in the correct folders under the html
 folder. Instructions and download links are in the README files in their respective folders.
+PHP only seems to work if you have MS Visual Studio Redistributable 2015-2019 installed.
 
 Every time you make a change in the nginx.conf file, you can use the test-config.bat file
 to see if nginx finds any errors in your config. If it finds no errors, you can now safely
@@ -43,6 +44,7 @@ dir C:\Server\Nginx1.17\html -Recurse | Unblock-File
 dir C:\Server\Nginx1.17\extras -Recurse | Unblock-File
 dir C:\Server\Nginx1.17\html\dashjs -Recurse | Unblock-File
 dir C:\Server\Nginx1.17\html\videojs -Recurse | Unblock-File
+
 
 If you have any questions don't think about bothering me for it. Use google like any other
 well respected geek.
