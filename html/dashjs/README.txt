@@ -1,3 +1,3 @@
 Place the package DASH.JS in this folder. Choose overwrite if asked. 
 
-Get it from https://github.com/Dash-Industry-Forum/dash.js
+https://github.com/videojs/videojs-contrib-dash
