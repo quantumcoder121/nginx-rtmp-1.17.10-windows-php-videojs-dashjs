@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DASH Stream</title>
+	        <style>
+            video {
+                width: 1280px;
+                height: 720px;
+            }
+        </style>
+</head>
+<body>
+<center>
+
+<div>
+	<video id="videoPlayer" controls></video>
+ </div>
+        <script src="dash.all.min.js"></script>
+        <script>
+            (function(){
+                var url = "/dashjs/stream/index.mpd";
+                var player = dashjs.MediaPlayer().create();
+                player.initialize(document.querySelector("#videoPlayer"), url, true);
+            })();
+        </script>
+</center>
+</body>
+</html>
